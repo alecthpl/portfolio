@@ -1,0 +1,48 @@
+// header
+header {
+    height: 98vh;
+    background:$primary;
+    text-align: center;
+
+    h1 {
+        margin: 43vh auto 0;
+        color: $light;
+    }
+
+    h2 {
+        color: $light;
+        font-size: 2em;
+    }
+}
+
+// main content
+main {
+    padding: 100px 0;
+    background: $light;
+
+    img {
+        height: 300px;
+        width: 100%;
+        background: $medium;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+// section
+section {
+    padding: 100px 0;
+    background: linear-gradient(to right, $primary 50%, $light 50%);
+}
+
+// footer
+footer {
+    padding: 100px 0;
+    background: $dark;
+
+    h2 {
+        color: $medium;
+    }
+}

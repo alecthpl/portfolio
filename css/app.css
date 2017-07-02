@@ -1,0 +1,67 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+p, li, table, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  color: tomato;
+}
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2em;
+  margin: 0;
+}
+
+header {
+  height: 98vh;
+  background: steelblue;
+  text-align: center;
+}
+
+header h1 {
+  margin: 43vh auto 0;
+  color: #fff;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
+main {
+  padding: 100px 0;
+  background: #fff;
+}
+
+main img {
+  height: 300px;
+  width: 100%;
+  background: #888;
+}
+
+main h3 {
+  font-size: 1em;
+}
+
+section {
+  padding: 100px 0;
+  background: linear-gradient(to right, steelblue 50%, #fff 50%);
+}
+
+footer {
+  padding: 100px 0;
+  background: #333;
+}
+
+footer h2 {
+  color: #888;
+}

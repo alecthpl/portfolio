@@ -1,0 +1,29 @@
+// colors
+$primary: steelblue;
+$accent: tomato;
+$dark: #333;
+$medium: #888;
+$light: #fff;
+
+// fonts
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    color: $dark;
+}
+p, li, table, body {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    font-family: 'Lato', sans-serif;
+    color: $accent;
+}
+
+// globals
+body {
+    background: $light;
+}
+
+.title {
+    font-size: 2em;
+    margin: 0;
+}
