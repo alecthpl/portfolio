@@ -5,7 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alec Plummer - Web Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -28,30 +29,19 @@
                 <h2 class="title">Some recent work</h2>
             </div>
         </div>
-        <div class="row small-up-2 medium-up-2">
+        <!-- click to open popup; left side thumbnail, right side is company name, tech used, link to site (button) -->
+        <div class="row small-up-2 medium-up-2" id="sites">
             <div class="columns">
-                <a href="#">
-                    <img src="#" />
-                    <h3>Company Name</h3>
-                </a>
+                <img src="#" />
             </div>
             <div class="columns">
-                <a href="#">
-                    <img src="#" />
-                    <h3>Company Name</h3>
-                </a>
+                <img src="#" />
             </div>
             <div class="columns">
-                <a href="#">
-                    <img src="#" />
-                    <h3>Company Name</h3>
-                </a>
+                <img src="#" />
             </div>
             <div class="columns">
-                <a href="#">
-                    <img src="#" />
-                    <h3>Company Name</h3>
-                </a>
+                <img src="#" />
             </div>
         </div>
     </main>
@@ -62,7 +52,7 @@
             <div class="medium-6 columns">
                 <h2 class="title">About me</h2>
                 <p>short bio plus list of skills</p>
-                <a href="#" class="button">download resume</a>
+                <a href="#" class="button">view resume</a>
             </div>
             <div class="medium-6 columns">
                 <h2 class="title">background image</h2>
@@ -75,10 +65,32 @@
         <div class="row">
             <div class="columns">
                 <h2 class="title">Contact me</h2>
-                <p>email + phone</p>
+                <p>email + phone + github</p>
             </div>
         </div>
     </footer>
+
+    <!-- site info popup -->
+    <div id="site-bg"></div>
+    <div id="site-info">
+        <div class="row">
+            <i class="fa fa-close" id="site-close"></i>
+            <div class="medium-6 columns">
+                <img src="#" />
+            </div>
+            <div class="medium-6 columns">
+                <h2 class="title">company name</h2>
+                <p>Short summary</p>
+                <h4>Tech Used</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>SCSS/CSS</li>
+                    <li>Javascript/jQuery</li>
+                </ul>
+                <a href="#" target="_blank" class="button">visit site</a>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/app.js"></script>
