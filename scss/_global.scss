@@ -1,7 +1,7 @@
 // colors
-$primary: steelblue;
-$accent: tomato;
-$dark: #333;
+$primary: #455A64;
+$accent: #FB8C00;
+$dark: #212121;
 $medium: #888;
 $light: #fff;
 
@@ -19,6 +19,9 @@ a {
 }
 
 // globals
+*:focus {
+    outline: none;
+}
 body {
     background: $light;
 }
@@ -26,6 +29,25 @@ body {
 .title {
     font-size: 2em;
     margin: 0 0 25px;
+}
+
+.button {
+    background: $accent;
+    font-weight: bold;
+    border-radius: 0;
+    border-bottom: 2px solid darken($accent, 5%);
+
+    &:visited {
+        background: $accent;
+    }
+
+    &:hover {
+        background: darken($accent, 5%);
+    }
+
+    &:focus, &:active {
+        background: darken($accent, 10%);
+    }
 }
 
 // site popup
