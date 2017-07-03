@@ -49,6 +49,12 @@ main {
 
     .button {
         width: 100px;
+
+        &:visited,
+        &:focus {
+            background: $accent;
+        }
+
         i {
             font-size: 20px;
             padding: 0;
