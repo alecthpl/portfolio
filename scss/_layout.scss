@@ -1,127 +1,111 @@
-// header
-header {
-    height: 98vh;
-    text-align: center;
+// landing
+#hero {
+    height: 100vh;
     background: $dark;
-    // background-image: url('/img/hero.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-
-    // #header-filter {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     height: 98vh;
-    //     background: rgba($dark, 0.1);
-    //     z-index: 1;
-    // }
+    transition: 0.6s;
+    z-index: 100;
 
     h1 {
-        position: relative;
-        margin: 43vh auto 0;
         color: $light;
-        z-index: 10;
+        margin: 30vh 0 0;
     }
 
     h2 {
-        position: relative;
         color: $light;
         font-size: 2em;
-        z-index: 10;
+        margin: 0 0 25px;
+
         span {
             color: $accent;
         }
     }
-}
-
-// main content
-main {
-    padding: 100px 0;
-    background: $light;
-
-    img {
-        height: 300px;
-        width: 100%;
-        background: #ecf0f1;
-    }
 
     .button {
-        width: 100px;
-
-        &:visited,
-        &:focus {
-            background: $accent;
-        }
-
-        i {
-            font-size: 20px;
-            padding: 0;
-            margin: 0;
-        }
-    }
-}
-
-#sites {
-    position: relative;
-    height: 350px;
-
-    .row {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin-top: 50px;
-        visibility: hidden;
-        opacity: 0;
-        z-index: 0;
-        transition: 0.15s ease-in;
-    }
-
-    .active {
-        visibility: visible;
-        opacity: 1;
-        z-index: 10;
-    }
-
-    h3 {
-        font-size: 1.5em;
-        margin: 0;
-    }
-    h4 {
-        font-size: 1em;
-        margin: 0;
-    }
-    p {
-        font-size: 0.9em;
-        margin: 15px 0;
-    }
-    ul {
-        margin-top: 0;
-        margin-bottom: 15px;
-        li {
-            font-size: 0.9em;
-        }
-    }
-    .button {
-        margin: 0;
         width: 150px;
     }
 }
 
-// section
-#about {
-    padding: 100px 0;
+// slide up animation
+.move-hero {
+    transform: translateY(-100%) !important;
+    margin-top: -100vh;
 }
 
-// footer
-footer {
-    padding: 100px 0;
-    background: $dark;
+#container {
+    position: relative;
+    transition: 0.6s;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+// header
+header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    transition: 0.6s;
+
+    img {
+        margin: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
 
     h2 {
-        color: $medium;
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    ul {
+        margin: 10px 0 25px;
+        padding: 0;
+        list-style: none;
+
+        li {}
+    }
+}
+
+// main
+main {
+    margin-left: 250px;
+    padding: 50px 0;
+
+    section {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .site {
+        margin-bottom: 75px;
+
+        img {
+            box-shadow: 0 0 5px 0 rgba($dark, 0.2);
+        }
+
+        h3 {
+            font-size: 1.25em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        .button {
+            width: 125px;
+            margin: 0;
+        }
     }
 }
