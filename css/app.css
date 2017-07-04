@@ -63,37 +63,94 @@ ul {
   background: #c87000;
 }
 
+.header-scrolled {
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(33, 33, 33, 0.3);
+  z-index: 999;
+}
+
+.header-scrolled a {
+  color: #212121;
+}
+
+.header-scrolled a:hover {
+  color: #FB8C00 !important;
+}
+
+.header-scrolled a:visited, .header-scrolled a:focus, .header-scrolled a:active {
+  color: #212121;
+}
+
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  text-align: right;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 39.9375em) {
+  header {
+    text-align: center;
+  }
 }
 
 header ul {
-  margin: 10px 0 25px;
+  margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 
 header ul li {
   display: inline-block;
 }
 
+header ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  transition: 0.15s;
+}
+
+header ul li a:visited, header ul li a:focus, header ul li a:active {
+  color: #fff;
+}
+
 #hero {
   height: 100vh;
   background: #212121;
   transition: 0.6s;
-  z-index: 100;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #hero {
+    height: 75vh;
+  }
 }
 
 #hero h1 {
   color: #fff;
-  margin: 30vh 0 0;
+  margin: 38vh 0 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #hero h1 {
+    margin-top: 20vh;
+  }
 }
 
 #hero h2 {
   color: #fff;
   font-size: 2em;
   margin: 0 0 25px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #hero h2 {
+    font-size: 1.4em;
+  }
 }
 
 #hero h2 span {
@@ -105,39 +162,11 @@ header ul li {
 }
 
 main {
-  padding: 0 0 50px;
+  padding: 0 0 100px;
 }
 
 main section {
-  margin: 0 0 50px;
-}
-
-main .site {
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
-
-main .site img {
-  box-shadow: 0 0 5px 0 rgba(33, 33, 33, 0.2);
-}
-
-main .site h3 {
-  font-size: 1.25em;
-  font-weight: bold;
-  margin: 0;
-}
-
-main .site p {
-  margin: 15px 0;
-}
-
-main .site .button {
-  width: 125px;
-  margin: 0;
-}
-
-#about {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #about h3 {
@@ -152,6 +181,40 @@ main .site .button {
 
 #about li {
   font-size: 0.9em;
+}
+
+#work .site {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+#work .site:last-of-type {
+  margin-bottom: 0;
+}
+
+#work .site img {
+  box-shadow: 0 0 5px 0 rgba(33, 33, 33, 0.2);
+}
+
+#work .site h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #work .site h3 {
+    margin-top: 25px;
+  }
+}
+
+#work .site p {
+  margin: 15px 0;
+}
+
+#work .site .button {
+  width: 125px;
+  margin: 0;
 }
 
 #contact img {

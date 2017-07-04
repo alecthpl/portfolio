@@ -1,8 +1,7 @@
 // smooth scroll to content
-$('#hero .button, .nav a').on('click', function() {
+$('#hero .button, .nav a').on('click', function(e) {
+    e.preventDefault();
     var anchor = $(this).attr('href');
-
-    console.log(anchor);
 
     $('html, body').animate({
         scrollTop: $(anchor).offset().top
@@ -12,9 +11,9 @@ $('#hero .button, .nav a').on('click', function() {
 $(window).scroll(function() {
     var top = $(window).scrollTop()
 
-    if (top >= $('header').offset().top) {
-        $('header').css('position', 'fixed');
+    if (top >= 100) {
+        $('header').addClass('header-scrolled')
     } else {
-        $('header').css('position', 'absolute');
+        $('header').removeClass('header-scrolled')
     }
 });
