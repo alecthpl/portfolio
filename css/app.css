@@ -32,6 +32,12 @@ body {
   background: #fff;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .title {
   font-size: 1.5em;
   margin: 0 0 25px;
@@ -132,15 +138,15 @@ header ul {
 
 main {
   margin-left: 250px;
-  padding: 50px 0;
+  padding: 0 0 50px;
 }
 
 main section {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin: 50px 0;
 }
 
 main .site {
+  margin-top: 50px;
   margin-bottom: 75px;
 }
 
@@ -161,4 +167,13 @@ main .site p {
 main .site .button {
   width: 125px;
   margin: 0;
+}
+
+#about h4 {
+  font-size: 1.2em;
+  margin-top: 25px;
+}
+
+#about li {
+  font-size: 0.9em;
 }

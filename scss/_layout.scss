@@ -79,14 +79,14 @@ header {
 // main
 main {
     margin-left: 250px;
-    padding: 50px 0;
+    padding: 0 0 50px;
 
     section {
-        margin-bottom: 50px;
-        padding-bottom: 50px;
+        margin: 50px 0;
     }
 
     .site {
+        margin-top: 50px;
         margin-bottom: 75px;
 
         img {
@@ -108,4 +108,20 @@ main {
             margin: 0;
         }
     }
+}
+
+// about
+#about {
+    h4 {
+        font-size: 1.2em;
+        margin-top: 25px;
+    }
+    li {
+        font-size: 0.9em;
+    }
+}
+
+// work
+#work {
+
 }

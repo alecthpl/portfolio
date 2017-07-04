@@ -33,6 +33,12 @@ body {
     background: $light;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .title {
     font-size: 1.5em;
     margin: 0 0 25px;
