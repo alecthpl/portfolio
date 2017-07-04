@@ -1,3 +1,19 @@
+// header
+header {
+    position: absolute;
+    top: 0;
+
+    ul {
+        margin: 10px 0 25px;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
 // landing
 #hero {
     height: 100vh;
@@ -25,64 +41,12 @@
     }
 }
 
-// slide up animation
-.move-hero {
-    transform: translateY(-100%) !important;
-    margin-top: -100vh;
-}
-
-#container {
-    position: relative;
-    transition: 0.6s;
-}
-
-body {
-    overflow-y: hidden;
-}
-
-// header
-header {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 250px;
-    transition: 0.6s;
-
-    img {
-        margin: 15px 0;
-    }
-
-    h1 {
-        font-size: 1.5em;
-        margin: 0;
-    }
-
-    h2 {
-        font-size: 1em;
-    }
-
-    h3 {
-        font-size: 1em;
-        margin: 0;
-    }
-
-    ul {
-        margin: 10px 0 25px;
-        padding: 0;
-        list-style: none;
-
-        li {}
-    }
-}
-
 // main
 main {
-    margin-left: 250px;
     padding: 0 0 50px;
 
     section {
-        margin: 50px 0;
+        margin: 0 0 50px;
     }
 
     .site {
@@ -112,6 +76,13 @@ main {
 
 // about
 #about {
+    padding-top: 50px;
+
+
+    h3 {
+        font-size: 1em;
+        margin: 0;
+    }
     h4 {
         font-size: 1.2em;
         margin-top: 25px;
@@ -124,4 +95,21 @@ main {
 // work
 #work {
 
+}
+
+// contact
+#contact {
+    img {
+        //padding-top: 40px;
+        margin: 0 0 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
 }

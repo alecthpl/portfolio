@@ -13,131 +13,143 @@
 </head>
 
 <body>
+
+    <!-- header -->
+    <header>
+        <div class="row">
+            <div class="columns">
+                <ul class="nav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     <!-- hero -->
     <section id="hero">
         <div class="row">
             <div class="text-center columns">
                 <h1>Alec Plummer</h1>
                 <h2>web <span>developer</span> who's always <span>creating</span> new things</h2>
-                <button class="button">Learn More <i class="fa fa-caret-down"></i></button>
+                <a href="#container" class="button">Learn More <i class="fa fa-caret-down"></i></a>
             </div>
         </div>
     </section>
 
-    <section id="container">
-        <!-- header -->
-        <header>
+    <!-- content -->
+    <main id="container">
+        <!-- about -->
+        <section class="row" id="about">
+            <div class="columns">
+                <h2 class="title">about me</h2>
+            </div>
+            <div class="columns">
+                <p>My names Alec Plummer and I’m a web developer with 3 years experience who specializes in front end development. I have experience in all phases of the development process and have completed, shipped and maintained numerous e-commerce projects throughout my career. I love solving difficult problems with new technologies and enjoy spending my free time expanding my skill set. I’m currently in the process of learning back end via Node, Express and MongoDB.</p>
+            </div>
+            <div class="medium-4 columns">
+                <h4>Core skills</h4>
+                <ul>
+                    <li>- HTML5</li>
+                    <li>- SCSS/CSS3</li>
+                    <li>- Javascript (ES6) + jQuery</li>
+                    <li>- Vue.js (learning React.js)</li>
+                    <li>- Foundation/Bootstrap</li>
+                    <li>- Git/version control</li>
+                    <li>- Responsive design</li>
+                </ul>
+            </div>
+            <div class="medium-4 columns">
+                <h4>Secondary skills</h4>
+                <ul>
+                    <li>- Node.js</li>
+                    <li>- Express.js</li>
+                    <li>- MongoDB</li>
+                    <li>- C# + .NET platform</li>
+                </ul>
+            </div>
+            <div class="medium-4 columns">
+                <h4>Interested in</h4>
+                <ul>
+                    <li>- Virtual/Augmented reality</li>
+                    <li>- Machine learning and AI</li>
+                    <li>- Web security</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- work -->
+        <section id="work">
             <div class="row">
                 <div class="columns">
-                    <img src="/img/profile.jpg" />
-                    <h1>Alec Plummer</h1>
-                    <h2>Web Developer</h2>
-                    <!-- <a href="#" class="button">github</a>
-                    <a href="#" class="button">resume</a> -->
+                    <h2 class="title">recent work</h2>
+                    <p>Below is a collection of recent work I’ve completed. These projects presented unique problems that I feel challenged my skillset and made me a better developer in the process. I used <a href="http://foundation.zurb.com" target="_blank">Foundation</a> as a base for layout and created a variety of custom JS components as needed to complete these projects. I’m responsible for 95%-100% of the front end in these projects, each being built from the ground up.</p>
                 </div>
             </div>
-        </header>
+            <div class="row site">
+                <div class="medium-6 columns">
+                    <img src="/img/resourcedecor.jpg" />
+                </div>
+                <div class="medium-6 columns">
+                    <h3>Resource Decor</h3>
+                    <p>This project is the most recent one I’ve completed and features quite a bit of custom functionality including; ability to create and manage multiple carts per user, custom infinite scroll + filtering, a complex dashboard that updates parts of the DOM without reload (Ajax + handlebars).</p>
+                    <a href="#" target="_blank" class="button">visit site</a>
+                </div>
+            </div>
+            <div class="row site">
+                <div class="medium-6 columns">
+                    <h3>B2B Direct Platform</h3>
+                    <p>The B2B platform is a theme based e-commerce platform that offers a wide range of customization on the users end. I worked within a team to create this from the ground up and it includes the following key features; fully featured CMS with the ability to create/edit static pages, multiple front end themes to choose from, integrates with backend.</p>
+                    <a href="#" target="_blank" class="button">visit site</a>
+                </div>
+                <div class="medium-6 columns">
+                    <img src="/img/b2bdirect.jpg" />
+                </div>
+            </div>
+            <div class="row site">
+                <div class="medium-6 columns">
+                    <img src="/img/kaleen.jpg" />
+                </div>
+                <div class="medium-6 columns">
+                    <h3>Kaleen</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                    <a href="#" target="_blank" class="button">visit site</a>
+                </div>
+            </div>
+            <div class="row site">
+                <div class="medium-6 columns">
+                    <h3>IMAX</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                    <a href="#" target="_blank" class="button">visit site</a>
+                </div>
+                <div class="medium-6 columns">
+                    <img src="/img/imaxcorp.jpg" />
+                </div>
+            </div>
+        </section>
 
-        <!-- content -->
-        <main>
-            <!-- about -->
-            <section class="row" id="about">
+        <!-- contact -->
+        <section id="contact">
+            <div class="row">
                 <div class="columns">
-                    <h2 class="title">about me</h2>
-                    <p>My names Alec Plummer and I’m a web developer with 3 years experience who specializes in front end development. I have experience in all phases of the development process and have completed, shipped and maintained numerous e-commerce projects throughout my career. I love solving difficult problems with new technologies and enjoy spending my free time expanding my skill set. I’m currently in the process of learning back end via Node, Express and MongoDB.</p>
+                    <h2 class="title">contact info</h2>
                 </div>
-                <div class="medium-4 columns">
-                    <h4>Core skills</h4>
-                    <ul>
-                        <li>- HTML5</li>
-                        <li>- SCSS/CSS3</li>
-                        <li>- Javascript (ES6) + jQuery</li>
-                        <li>- Vue.js (learning React.js)</li>
-                        <li>- Foundation/Bootstrap</li>
-                        <li>- Git/version control</li>
-                        <li>- Responsive design</li>
-                    </ul>
+                <div class="medium-6 columns">
+                    <img src="/img/profile.jpg" />
                 </div>
-                <div class="medium-4 columns">
-                    <h4>Secondary skills</h4>
-                    <ul>
-                        <li>- Node.js</li>
-                        <li>- Express.js</li>
-                        <li>- MongoDB</li>
-                        <li>- C# + .NET platform</li>
-                    </ul>
+                <div class="medium-6 columns">
+                    <h1>Alec Plummer</h1>
+                    <h5>Web Developer</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <a href="#" class="button"><i class="fa fa-file" aria-hidden="true"></i> resume</a>
+                    <a href="#" class="button" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> alecthpl</a>
+                    <a href="mailto:alecthpl@gmail.com" class="button"><i class="fa fa-envelope" aria-hidden="true"></i> alecthpl@gmail.com</a>
                 </div>
-                <div class="medium-4 columns">
-                    <h4>Interested in</h4>
-                    <ul>
-                        <li>- Virtual/Augmented reality</li>
-                        <li>- Machine learning and AI</li>
-                        <li>- Web security</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- work -->
-            <section id="work">
-                <div class="row">
-                    <div class="columns">
-                        <h2 class="title">recent work</h2>
-                        <p>Below is a collection of recent work I’ve completed. These projects presented unique problems that I feel challenged my skillset and made me a better developer in the process. I used <a href="http://foundation.zurb.com" target="_blank">Foundation</a> as a base for layout and created a variety of custom JS components as needed to complete these projects. I’m responsible for 95%-100% of the front end in these projects, each being built from the ground up.</p>
-                    </div>
-                </div>
-                <div class="row site">
-                    <div class="medium-6 columns">
-                        <img src="/img/resourcedecor.jpg" />
-                    </div>
-                    <div class="medium-6 columns">
-                        <h3>Resource Decor</h3>
-                        <p>This project is the most recent one I’ve completed and features quite a bit of custom functionality including; ability to create and manage multiple carts per user, custom infinite scroll + filtering, a complex dashboard that updates parts of the DOM without reload (Ajax + handlebars).</p>
-                        <a href="#" target="_blank" class="button">visit site</a>
-                    </div>
-                </div>
-                <div class="row site">
-                    <div class="medium-6 columns">
-                        <h3>B2B Direct Platform</h3>
-                        <p>The B2B platform is a theme based e-commerce platform that offers a wide range of customization on the users end. I worked within a team to create this from the ground up and it includes the following key features; fully featured CMS with the ability to create/edit static pages, multiple front end themes to choose from, integrates with backend.</p>
-                        <a href="#" target="_blank" class="button">visit site</a>
-                    </div>
-                    <div class="medium-6 columns">
-                        <img src="/img/b2bdirect.jpg" />
-                    </div>
-                </div>
-                <div class="row site">
-                    <div class="medium-6 columns">
-                        <img src="/img/kaleen.jpg" />
-                    </div>
-                    <div class="medium-6 columns">
-                        <h3>Kaleen</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                        <a href="#" target="_blank" class="button">visit site</a>
-                    </div>
-                </div>
-                <div class="row site">
-                    <div class="medium-6 columns">
-                        <h3>IMAX</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                        <a href="#" target="_blank" class="button">visit site</a>
-                    </div>
-                    <div class="medium-6 columns">
-                        <img src="/img/imaxcorp.jpg" />
-                    </div>
-                </div>
-            </section>
-
-            <!-- contact -->
-            <section id="contact">
-                <div class="row">
-                    <div class="columns">
-                        <h2 class="title">contact info</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <script src="js/jquery.js"></script>
     <script src="js/app.js"></script>

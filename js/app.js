@@ -1,11 +1,20 @@
-// hide hero
-$('#hero .button').on('click', function() {
-    $('#hero').addClass('move-hero');
-    $('#container').addClass('move-container');
+// smooth scroll to content
+$('#hero .button, .nav a').on('click', function() {
+    var anchor = $(this).attr('href');
 
-    setTimeout(function() {
+    console.log(anchor);
+
+    $('html, body').animate({
+        scrollTop: $(anchor).offset().top
+    }, 300);
+});
+
+$(window).scroll(function() {
+    var top = $(window).scrollTop()
+
+    if (top >= $('header').offset().top) {
         $('header').css('position', 'fixed');
-        $('body').css('overflow-y', 'auto');
-    }, 600);
-
+    } else {
+        $('header').css('position', 'absolute');
+    }
 });

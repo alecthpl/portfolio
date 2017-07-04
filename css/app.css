@@ -63,6 +63,21 @@ ul {
   background: #c87000;
 }
 
+header {
+  position: absolute;
+  top: 0;
+}
+
+header ul {
+  margin: 10px 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
 #hero {
   height: 100vh;
   background: #212121;
@@ -89,60 +104,12 @@ ul {
   width: 150px;
 }
 
-.move-hero {
-  transform: translateY(-100%) !important;
-  margin-top: -100vh;
-}
-
-#container {
-  position: relative;
-  transition: 0.6s;
-}
-
-body {
-  overflow-y: hidden;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 250px;
-  transition: 0.6s;
-}
-
-header img {
-  margin: 15px 0;
-}
-
-header h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-header h2 {
-  font-size: 1em;
-}
-
-header h3 {
-  font-size: 1em;
-  margin: 0;
-}
-
-header ul {
-  margin: 10px 0 25px;
-  padding: 0;
-  list-style: none;
-}
-
 main {
-  margin-left: 250px;
   padding: 0 0 50px;
 }
 
 main section {
-  margin: 50px 0;
+  margin: 0 0 50px;
 }
 
 main .site {
@@ -169,6 +136,15 @@ main .site .button {
   margin: 0;
 }
 
+#about {
+  padding-top: 50px;
+}
+
+#about h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
 #about h4 {
   font-size: 1.2em;
   margin-top: 25px;
@@ -176,4 +152,17 @@ main .site .button {
 
 #about li {
   font-size: 0.9em;
+}
+
+#contact img {
+  margin: 0 0 15px;
+}
+
+#contact h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#contact h5 {
+  font-size: 1em;
 }
