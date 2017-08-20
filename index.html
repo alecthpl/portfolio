@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alec Plummer - Web Developer</title>
+    <link rel="shortcut icon" type="image/png" href="/content/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/foundation.min.css">
@@ -19,9 +20,9 @@
         <div class="row">
             <div class="columns">
                 <ul class="nav">
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -41,41 +42,50 @@
     <!-- content -->
     <main id="container">
         <!-- about -->
-        <section class="row" id="about">
-            <div class="columns">
-                <h2 class="title">about me</h2>
+        <section id="about">
+            <div class="row">
+                <div class="large-4 medium-5 columns">
+                    <img src="/img/profile.jpg" alt="Alec Plummer profile image" />
+                </div>
+                <div class="large-8 medium-7 columns">
+                    <h2 class="title">Hello World!</h2>
+                    <p>My names Alec Plummer and I’m a web developer with 3 years experience who specializes in front end development. I have experience in all phases of the development process and have built, shipped and maintained numerous e-commerce projects throughout my career.</p>
+                    <p>I love solving difficult problems with new technologies and enjoy spending my free time expanding my skill set. I’m currently in the process of learning back end via Node, Express and MongoDB.</p>
+                    <a href="/content/alec-plummer-resume.pdf" class="button" download><i class="fa fa-file" aria-hidden="true"></i> resume</a>
+                    <a href="https://github.com/alecthpl" class="button" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> alecthpl</a>
+                    <a href="mailto:alecthpl@gmail.com" class="button"><i class="fa fa-envelope" aria-hidden="true"></i> alecthpl@gmail.com</a>
+                </div>
             </div>
-            <div class="columns">
-                <p>My names Alec Plummer and I’m a web developer with 3 years experience who specializes in front end development. I have experience in all phases of the development process and have built, shipped and maintained numerous e-commerce projects throughout my career. I love solving difficult problems with new technologies and enjoy spending my free time expanding my skill set. I’m currently in the process of learning back end via Node, Express and MongoDB.</p>
-            </div>
-            <div class="medium-4 columns">
-                <h4>Core skills</h4>
-                <ul>
-                    <li>- HTML5</li>
-                    <li>- SCSS/CSS3</li>
-                    <li>- Javascript (ES6) + jQuery</li>
-                    <li>- Vue.js (learning React.js)</li>
-                    <li>- Foundation/Bootstrap</li>
-                    <li>- Git/version control</li>
-                    <li>- Responsive design</li>
-                </ul>
-            </div>
-            <div class="medium-4 columns">
-                <h4>Secondary skills</h4>
-                <ul>
-                    <li>- Node.js</li>
-                    <li>- Express.js</li>
-                    <li>- MongoDB</li>
-                    <li>- C# + .NET platform</li>
-                </ul>
-            </div>
-            <div class="medium-4 columns">
-                <h4>Interested in</h4>
-                <ul>
-                    <li>- Virtual/Augmented reality</li>
-                    <li>- Machine learning and AI</li>
-                    <li>- Web security</li>
-                </ul>
+            <div class="row">
+                <div class="medium-4 columns">
+                    <h4>Core skills</h4>
+                    <ul>
+                        <li>- HTML5</li>
+                        <li>- SCSS/CSS3</li>
+                        <li>- Javascript (ES6) + jQuery</li>
+                        <li>- Vue.js (learning React.js)</li>
+                        <li>- Foundation/Bootstrap</li>
+                        <li>- Git/version control</li>
+                        <li>- Responsive design</li>
+                    </ul>
+                </div>
+                <div class="medium-4 columns">
+                    <h4>Secondary skills</h4>
+                    <ul>
+                        <li>- Node.js</li>
+                        <li>- Express.js</li>
+                        <li>- MongoDB</li>
+                        <li>- C# + .NET platform</li>
+                    </ul>
+                </div>
+                <div class="medium-4 columns">
+                    <h4>Interested in</h4>
+                    <ul>
+                        <li>- Virtual/Augmented reality</li>
+                        <li>- Machine learning and AI</li>
+                        <li>- Web security</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -84,7 +94,7 @@
             <div class="row">
                 <div class="columns">
                     <h2 class="title">recent work</h2>
-                    <p>Below is a collection of recent work I’ve completed. These projects presented unique problems that I feel challenged my skillset and made me a better developer in the process. I used <a href="http://foundation.zurb.com" target="_blank">Foundation</a> as a base for layout and created a variety of custom JS components as needed to complete these projects. I’m responsible for 95%-100% of the front end in these projects, each being built from the ground up.</p>
+                    <p>Below is a collection of recent work I’ve completed. These projects presented unique problems that I feel challenged my skillset and made me a better developer in the process. I used <a href="http://foundation.zurb.com" target="_blank">Foundation</a> as a base for layout and created a variety of custom JS components as needed to complete these projects. I’m responsible for 90%+ of the front end in these projects, each being built from the ground up.</p>
                 </div>
             </div>
             <div class="row site">
@@ -94,7 +104,7 @@
                 <div class="medium-6 columns">
                     <h3>Resource Decor</h3>
                     <p>This project is the most recent one I’ve completed and features quite a bit of custom functionality including; ability to create and manage multiple carts per user, custom infinite scroll + filtering, a complex dashboard that updates parts of the DOM without reload (Ajax + handlebars).</p>
-                    <a href="#" target="_blank" class="button">visit site</a>
+                    <a href="https://resourcedecor.com/" target="_blank" class="button">visit site</a>
                 </div>
             </div>
             <div class="row site">
@@ -104,7 +114,7 @@
                 <div class="medium-6 columns">
                     <h3>B2B Direct Platform</h3>
                     <p>The B2B platform is a theme based e-commerce platform that offers a wide range of customization on the users end. I worked within a team to create this from the ground up and it includes the following key features; fully featured CMS with the ability to create/edit static pages, multiple front end themes to choose from, integrates with backend.</p>
-                    <a href="#" target="_blank" class="button">visit site</a>
+                    <a href="https://artnow.designsdirectllc.com/" target="_blank" class="button">visit site</a>
                 </div>
             </div>
             <div class="row site">
@@ -113,8 +123,8 @@
                 </div>
                 <div class="medium-6 columns">
                     <h3>Kaleen</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                    <a href="#" target="_blank" class="button">visit site</a>
+                    <p>This project required the integration of two seperate data sets and the ability to authenticate users accordingly. I created the UI to fullfill the minimal/clean aesthetic that their design team was looking for.</p>
+                    <a href="https://www.kaleen.com/" target="_blank" class="button">visit site</a>
                 </div>
             </div>
             <div class="row site">
@@ -123,28 +133,8 @@
                 </div>
                 <div class="medium-6 columns">
                     <h3>IMAX</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
-                    <a href="#" target="_blank" class="button">visit site</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- contact -->
-        <section id="contact">
-            <div class="row">
-                <div class="columns">
-                    <h2 class="title">contact info</h2>
-                </div>
-                <div class="medium-6 medium-push-6 columns">
-                    <img src="/img/profile.jpg" alt="Alec Plummer profile image" />
-                </div>
-                <div class="medium-6 medium-pull-6 columns">
-                    <h1>Alec Plummer</h1>
-                    <h5>Web Developer</h5>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    <a href="#" class="button"><i class="fa fa-file" aria-hidden="true"></i> resume</a>
-                    <a href="https://github.com/alecthpl" class="button" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> alecthpl</a>
-                    <a href="mailto:alecthpl@gmail.com" class="button"><i class="fa fa-envelope" aria-hidden="true"></i> alecthpl@gmail.com</a>
+                    <p>Created directly from a mockup provided from their design team, this project was pretty straight forward in terms of UI. A few key custom features I created for this project was the pagination and multiple data sets that allow users to toggle between the clients core products and higher end design products.</p>
+                    <a href="https://imaxcorp.com/" target="_blank" class="button">visit site</a>
                 </div>
             </div>
         </section>

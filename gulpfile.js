@@ -1,11 +1,11 @@
 'use strict';
 
 // require node modules
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    maps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    bs = require('browser-sync').create();
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let maps = require('gulp-sourcemaps');
+let autoprefixer = require('gulp-autoprefixer');
+let bs = require('browser-sync').create();
 
 // compile sass
 gulp.task('compileSass', function () {

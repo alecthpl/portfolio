@@ -9,11 +9,11 @@ p, li, table, body {
 
 a {
   font-family: 'Nunito', sans-serif;
-  color: #FB8C00;
+  color: steelblue;
 }
 
 a:hover {
-  color: #e27e00;
+  color: #3f75a2;
 }
 
 *:focus {
@@ -21,11 +21,11 @@ a:hover {
 }
 
 *::-moz-selection {
-  background: rgba(251, 140, 0, 0.2);
+  background: rgba(70, 130, 180, 0.2);
 }
 
 *::selection {
-  background: rgba(251, 140, 0, 0.2);
+  background: rgba(70, 130, 180, 0.2);
 }
 
 body {
@@ -42,25 +42,26 @@ ul {
   font-size: 1.5em;
   margin: 0 0 25px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .button {
-  background: #FB8C00;
+  background: steelblue;
   font-weight: bold;
   border-radius: 2px;
-  border-bottom: 2px solid #e27e00;
+  border-bottom: 2px solid #3f75a2;
 }
 
-.button:visited {
-  background: #FB8C00;
+.button:visited, .button:active {
+  background: steelblue;
 }
 
 .button:hover {
-  background: #e27e00;
+  background: #3f75a2;
 }
 
-.button:focus, .button:active {
-  background: #c87000;
+.button:focus {
+  background: #38678f;
 }
 
 .header-scrolled {
@@ -74,7 +75,7 @@ ul {
 }
 
 .header-scrolled a:hover {
-  color: #FB8C00 !important;
+  color: steelblue !important;
 }
 
 .header-scrolled a:visited, .header-scrolled a:focus, .header-scrolled a:active {
@@ -154,7 +155,7 @@ header ul li a:visited, header ul li a:focus, header ul li a:active {
 }
 
 #hero h2 span {
-  color: #FB8C00;
+  color: steelblue;
 }
 
 #hero .button {
@@ -169,6 +170,20 @@ main section {
   padding-top: 100px;
 }
 
+#about img {
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  #about img {
+    margin-bottom: 25px;
+  }
+}
+
+#about .title {
+  margin-bottom: 15px;
+}
+
 #about h3 {
   font-size: 1em;
   margin: 0;
@@ -176,6 +191,8 @@ main section {
 
 #about h4 {
   font-size: 1.2em;
+  font-weight: bold;
+  color: #888;
   margin-top: 25px;
 }
 
@@ -215,17 +232,4 @@ main section {
 #work .site .button {
   width: 125px;
   margin: 0;
-}
-
-#contact img {
-  margin: 0 0 15px;
-}
-
-#contact h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-#contact h5 {
-  font-size: 1em;
 }

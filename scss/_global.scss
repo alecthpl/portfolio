@@ -1,6 +1,6 @@
 // colors
 $primary: #455A64;
-$accent: #FB8C00;
+$accent: steelblue;
 $dark: #212121;
 $medium: #888;
 $light: #fff;
@@ -22,10 +22,6 @@ a {
     &:hover {
         color: darken($accent, 5%);
     }
-
-    // &:visited, &:focus, &:active {
-    //     color: $light;
-    // }
 }
 
 // globals
@@ -50,6 +46,7 @@ ul {
     font-size: 1.5em;
     margin: 0 0 25px;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .button {
@@ -58,7 +55,7 @@ ul {
     border-radius: 2px;
     border-bottom: 2px solid darken($accent, 5%);
 
-    &:visited {
+    &:visited, &:active {
         background: $accent;
     }
 
@@ -66,7 +63,7 @@ ul {
         background: darken($accent, 5%);
     }
 
-    &:focus, &:active {
+    &:focus {
         background: darken($accent, 10%);
     }
 }

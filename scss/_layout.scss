@@ -94,12 +94,24 @@ main {
 
 // about
 #about {
+    img {
+        border-radius: 3px;
+
+        @media #{$small-only} {
+            margin-bottom: 25px;
+        }
+    }
+    .title {
+        margin-bottom: 15px;
+    }
     h3 {
         font-size: 1em;
         margin: 0;
     }
     h4 {
         font-size: 1.2em;
+        font-weight: bold;
+        color: $medium;
         margin-top: 25px;
     }
     li {
@@ -137,22 +149,5 @@ main {
             width: 125px;
             margin: 0;
         }
-    }
-}
-
-// contact
-#contact {
-    img {
-        //padding-top: 40px;
-        margin: 0 0 15px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-        margin: 0;
-    }
-
-    h5 {
-        font-size: 1em;
     }
 }
