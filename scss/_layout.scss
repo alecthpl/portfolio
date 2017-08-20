@@ -52,15 +52,11 @@ header {
     background: $dark;
     transition: 0.6s;
 
-    @media #{$small-only} {
-        height: 75vh;
-    }
-
     h1 {
         color: $light;
         margin: 38vh 0 0;
         @media #{$small-only} {
-            margin-top: 20vh;
+            margin-top: 35vh;
         }
     }
 
@@ -116,6 +112,11 @@ main {
     }
     li {
         font-size: 0.9em;
+    }
+    @media #{$small-only} {
+        .button {
+            display: block;
+        }
     }
 }
 
