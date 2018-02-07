@@ -34,9 +34,22 @@ footer {
     footer a:last-of-type {
       margin-right: 0; }
 
+@media screen and (max-width: 63.9375em) and (orientation: landscape) {
+  h1 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.3rem; }
+  main {
+    margin-top: 25vh; } }
+
 @media screen and (max-width: 39.9375em) {
   main {
+    margin-top: 32vh;
     padding: 0 2rem; }
+    main h1 {
+      font-size: 2rem; }
+    main h3 {
+      font-size: 1.3rem; }
   footer a {
     font-size: 1rem;
     margin-right: 15px; } }
